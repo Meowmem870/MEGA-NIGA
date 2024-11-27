@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 data-lang-key="header">Привет, я Василий Буглак!</h1>
+    <p data-lang-key="intro">Начинающий программист. Хочу помочь в создании ААА игры!</p>
+  </header>
+  <nav>
+    <button onclick="scrollToSection('main-info')" data-lang-key="nav-main-info">Основная информация</button>
+    <button onclick="scrollToSection('skills')" data-lang-key="nav-skills">Навыки</button>
+    <button onclick="scrollToSection('education')" data-lang-key="nav-education">Образование</button>
+    <button onclick="scrollToSection('contacts')" data-lang-key="nav-contacts">Контакты</button>
+  </nav>
+  <main>
+    <section id="main-info">
+      <h2 data-lang-key="main-info-title">Основная информация</h2>
+      <p data-lang-key="main-info-text">Меня зовут Василий Буглак, я родился 10 декабря 2009 года. Сейчас посещаю Wirtschaft Schule Ingolstadt.</p>
+    </section>
+    <section id="skills">
+      <h2 data-lang-key="skills-title">Навыки</h2>
+      <ul>
+        <li data-lang-key="skill1">Английский: B2</li>
+        <li data-lang-key="skill2">Немецкий: B2</li>
+        <li data-lang-key="skill3">Русский и украинский: носитель</li>
+        <li data-lang-key="skill4">JavaScript, HTML, CSS: начальный уровень</li>
+      </ul>
+    </section>
+    <section id="education">
+      <h2 data-lang-key="education-title">Образование</h2>
+      <p data-lang-key="education-text">Я учусь в Wirtschaft Schule Ingolstadt, стремлюсь к знаниям и совершенствую навыки программирования.</p>
+    </section>
+    <section id="contacts">
+      <h2 data-lang-key="contacts-title">Контакты</h2>
+      <ul>
+        <li data-lang-key="contact1">Email: vasylbuhlak@gmail.com</li>
+        <li data-lang-key="contact2">Телефон: +491717441914</li>
+        <li data-lang-key="contact3">GitHub: <a href="https://github.com/Meowmen870" target="_blank">Meowmen870</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div id="timer" data-lang-key="timer">До дня рождения осталось: <span id="countdown"></span></div>
+    <button id="themeToggle" data-lang-key="theme-toggle">Сменить тему</button>
+    <select id="language-select">
+      <option value="ru">Русский</option>
+      <option value="en">English</option>
+      <option value="de">Deutsch</option>
+      <option value="uk">Українська</option>
+    </select>
+  </footer>
+</body>
+</html>
